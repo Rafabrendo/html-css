@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--head(cabeça) são as configurações do site.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(190, 190, 190, 0.74);
+            margin: 0px;
+        }
+        header{
+            background-color:rgb(236, 240, 240);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: lightgray;
+            padding: 3px;
+            /*
+            box-shadow: 1px 1px 1px black;
+            box-shadow: des. horizontal, des. vertical, espalhamento, cor-da-sombra;*/
+            
+
+        }
+        /*Todo link(a) que está dentro de nav*/
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+
+      
+        /*aside é filho de article*/
+        article >  aside{
+            background-color: lightgray;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: inset -2px -1px 1px rgb(190 190 190 / 74%);
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            /*Quando eu coloco um padding, o navegador compreende que o paragrafo, a margin do paragrafo + o padding serão considerados. Para tirar a margin do paragrafo eu tenho que entrar na children(footer > p(p é a children  de footer))*/
+            margin: 0px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        #bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%; /*Fica uma bola*/
+        }
+    </style>
+</head>
+<body>
+    <!--Tags de agrupamento basicamente sempre foram duas, que é a div(box-level) e o span(inline-level).
+    Hoje, no html5 existe grouping tags semanticas(com sentido).-->
+    <header>
+        <!--cabeçalho é o conteudo, tanto que está dentro do body-->
+        <h1>Meu site</h1>
+        <nav>
+            <!--vai colocar os links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <!--conteudo principal-->
+        <section id="assuntos">
+            <!--secção de alguma coisa. Ex.: assuntos-->
+        </section>
+        <section id="noticias">
+            <article>
+                <!---->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum eum non quo aspernatur, quod veritatis consectetur placeat, commodi culpa vitae ex tempora repellendus officiis sed optio at perferendis blanditiis natus.</p>
+                <aside>
+                    <!--conteudo periferico ao article-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!--Rodapé-->
+        <p>Desenvolvido pelo RafaBrendo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        body{
+            margin-left: 10px;
+        }
+        h1{
+            /*Por padrão, o h1 é block-level*/
+
+            /*Se eu quiser personaliza-lo e coloca-lo inline-level, é só colocar -> display: inline;*/
+            display: inline;
+            background-color: lightgrey;
+            height: 84px;
+            width: 378px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgray; 
+            
+            Shorthand :   
+            
+            border: width style color;   */
+            
+            border: 10px solid darkgray;
+            
+
+
+            /*O padding é dividido em quatro partes*/
+            /*
+            padding-top:10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+            Shorthand: 
+            
+            padding: top right bottom left; */
+            padding: 10px 10px 10px 10px;
+
+            /*Maneira de centralizar a caixa:*/
+
+            /*margin: auto; Vai fazer com que a caixa fique no "meio" porque vai ser dividido o espaço */
+
+            /*
+            margin-top:10px;
+            margin-right: 10px;
+            margin-bottom: 0px;
+            margin-left: 112px;
+            
+            Shorthand: 
+            margin: top right bottom left;
+            */
+            /*margin: 10px 10px 0px 112px;*/
+
+            /*Para centralizar a margin da esquerda e da direita é só colocar auto. Daí, automaticamente a caixa vai ficar no centro.
+
+            Posso fazer assim tbm: 
+              margin: 10px auto 0px auto;
+
+              obs.: Seu eu não colocar nada no left, o valor que estiver no right, vai ser passado pro left tbm. Do mesmo jeito o top e o bottom.
+            
+            */
+
+            margin: 10px auto 0px;
+
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+            
+            Shorthand: 
+            outline: width style color;*/
+            outline: 5px dashed blueviolet;
+
+
+
+            
+            
+        }
+        a{
+            /*Por padrão o a(link) é inline-level*/
+
+            /*Eu posso modificar isso colocando -> display: block;
+            daí eu posso colocar um hight e um width*/
+
+            display: block;
+
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top:10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

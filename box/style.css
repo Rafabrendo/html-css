@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+h1{
+    border: 10px solid red;
+    width: 300px;
+    height: 50px;
+    background-color: lightgray;/*No content(conteudo)*/
+    padding: 20px;
+    outline: 30px solid blue;
+    margin: 50px;
+}

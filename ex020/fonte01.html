@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Coloquei três opções para caso para ter maior compatibilidade com o  dispositivo que abrir o site (safe Combination)
+            Courier New -> fonte serifada e monoespaçada
+            */
+            /*Todos os dispositivos tem fonte sem serifa (Sans-serif)
+            Se eu colocar serif o dispositivo vai colocar a fonte serifada da escolha dele. O mesmo vale para monospace e sans-serif
+            */
+
+            font-size: 16px ;
+            /*Temos as medidas absolutas e relativas.
+            Absolutas:
+            cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica)
+
+            Relativas:
+            em(relativo ao tamanho da altura M (maiusculo) de uma determinada fonte), ex(relativo ao tamanho da altura X de uma determinada fonte), rem, vw(viwport), vh(altura da viwport), %
+
+            obs.: recomendação da w3c é usar px e em.
+
+            */
+            /*
+            16px geralmente = 1em
+            */
+
+            /*
+            font-weight: lighter;
+            */
+            /*
+            loghter normal bold bolder
+
+            outra variação de peso é a numerica
+            de 100 - 900
+            
+            verdana, Arial, times simplesmente não possui tantas variações de peso
+
+            */
+
+            /*font-weight: 100;
+            font-style: normal;
+            */
+            /*
+            Shorthand font
+
+            font-style -> font-weight -> font-size -> font-family
+            */
+
+            font: italic lighter 16px sans-serif;
+            /*Essa configuração vai para todas*/
+
+        }
+        /*h1, h2{
+            font-family: 'Times New Roman', Times, serif;
+            /*Fontes serifada
+        }
+            */
+        
+        h1{
+            font: normal bolder 3em 'work sans', sans-serif ;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--Arial é uma fonte sem serifa-->
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti magni modi eum nobis natus laudantium nostrum quis voluptatum doloribus voluptatibus, quae aspernatur incidunt sit adipisci sunt, temporibus odio magnam sequi! 
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptates quos inventore consectetur eveniet minus, voluptas soluta aliquid? Illum at fuga ratione maiores, sit neque quas pariatur id nisi dicta.
+    </p>
+    <h2>Subtítulo do exercicío</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, obcaecati! Magnam obcaecati dignissimos laborum illo iste hic iure provident fuga eligendi sit dolore quas reiciendis ullam, in tenetur quae sint!</p>
+</body>
+</html>
