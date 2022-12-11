@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            /*Usei o background-size:100% 100%; isso vai fazer com que ocupe toda a area do x e do y*/
+            position: relative;
+            /*Vai ter um posicionamento relative(O que contem)*/
+            height: 96vh;
+            /*94 porcento da area branca(viwe port)*/
+
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;
+            /*O que está sendo contido vai ser position:absolute. Isso pra centralizar. Daí eu vou poder configurar o left e o top*/
+            height: 200px;
+            width: 400px;
+            /*Maneira mais fácil de centralizar um conteudo: height, width e margin:auto*/
+
+            /* left: 100px; É desde a borda ate a o lado
+            top:200px; */
+
+            /* left:25%;
+            top:25%; */
+
+            left:50%;
+            top:50%;
+
+            background-color: yellow;
+
+            /* transform: translate(20px, 20px); */
+            /*Mexer em qualquer caixa aplicando alguma alteração de transformação nela.
+            
+            Tem varias operações que eu posso fazer com a caixa, mas eu vou utilizar a translate(). obs.: olhar doc
+            
+            transform: translate(20px 20px); foram 20px pra baixo e 20px pra direita. 
+            (x y) x positivo mexe pra direita, negativo para a esquerda. y positivo mexe pra baixo e negativo para cima
+
+            */
+
+            transform: translate(-50%,-50%);
+
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
