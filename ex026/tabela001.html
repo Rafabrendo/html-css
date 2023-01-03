@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Criando a primeira tabela em HTML">
+    <meta name="author" content="Rafa">
+    <meta name="keywords" content="Tabela, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <!-- Vou fazer bordas: -->
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            /* assim vai ter uma borda em volta da tabela 
+            border:1px solid black*/
+            width: 400px;
+            border-collapse: collapse;
+            /* vai fazer com que fique com cara de tabela. As linhas que estão quebradas/colapsadas irão se unir.*/
+            /* border: 3px solid green; */
+            height: 400px;
+            /* por causa do width que é o mesmo que o height, ficou uma celula quadrada */
+
+        }
+        /* tr{
+            todos os tr vão ter a cor gray
+            background-color: gray;
+        } */
+        /* tr.linha{
+             vai pegar a linha toda 
+            background-color: gray;
+        } */
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            /* Alinhamento horizontal. Usando essa propriedade, eu posso escolher onde ficam as células */
+            vertical-align: top;
+            /*Alinhamento vertical*/
+            /*top, bottom, middle(default)*/
+        }
+        /*
+        td.dado{
+             vai ser especifico a um dado da tabela 
+            background-color: yellow;
+        }*/
+        
+        /* configuração para números: */
+        .numero{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+    <!-- Hierarquia de tabelas(SIMPLES):
+        TABLE = tabela
+            TABLE ROW =linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+     -->
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td>A1
+            <td>B1
+            <td>C1
+        <!-- é opcional o fechamento do tr e td -->
+        <tr class="linha"> <!-- Segunda linha -->
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+</body>
+</html>
