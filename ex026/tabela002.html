@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="creating a new table.">
+    <meta name="author" content="Rafa">
+    <meta name="keywords" content="table">
+    <title>Tables</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            /* para deixar o cabeçalho fixo */
+            position: relative;
+        }
+        /* estado e população são th */
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+        }
+
+        /* para deixar o cabeçalho fixo */
+        thead > tr > th {
+            position: sticky; /*Grudavel*/
+            top: -1px; /*significa que ele vai colar na parte 0*/
+            background-color: gray;
+            border: 1px solid black;
+
+
+        }  
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: darkgray;
+            text-decoration: underline;
+
+        }
+
+        /* odd-> impar (2n -1); even -> par (2n) */
+        tbody > tr:nth-child(2n){
+            /* background-color: lightgray;
+            */
+            background-color: lightgray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Hierarquia de tabelas(SIMPLES):
+        TABLE = tabela
+            CAPTION = legenda da tabela
+            TABLE ROW =linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+     -->
+     <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD (POSSO TER DENTRO:)
+                TR, TD, TH
+            TBODY (POSSO TER DENTRO:)
+                TR, TD, TH
+            TFOOT (POSSO TER DENTRO:)
+                TR, TD, TH 
+        -->
+    
+    <table>
+        <caption>Population of federative units</caption>
+        <thead>
+            <th scope="col">Estado</th>
+            <!-- Por causa de eu ter feito um width de 100px na coluna de população, a minha coluna do estado vai ficar com 400px. Isso porque eu coloquei 500px no width da tabela. -->
+            <th scope="col" style="width: 100px;">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">445.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10.444.526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.693.929</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">8.796.448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.452.381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7.581.051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6.248.436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6.003.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6.574.789</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3.766.528</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.514.952</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3.483.985</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.035.122</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.168.027</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.118.360</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.120.494</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.570.160</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.449.024</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.068.017</td>
+            </tr>
+            <tr>
+                <td>Rondônoa</td>
+                <td class="num">1.562.409</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.383.445</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">733.559</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">669.526</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">450.479</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>0000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur similique pariatur eaque voluptas perspiciatis facere dolores, adipisci, provident hic aspernatur corrupti cumque, quisquam aut necessitatibus quos eligendi saepe quis.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis mollitia dignissimos earum placeat cupiditate expedita! Asperiores voluptatum tempora maiores! Tenetur id quo quaerat molestias illum saepe nam, veritatis distinctio ex?
+        Rem accusantium veniam aperiam quisquam, aut, ipsum culpa minima voluptatibus a hic eaque numquam ratione vitae assumenda ipsa nam. Ipsum rerum fugiat eveniet quis! Mollitia repellendus nemo ipsum vel tempore.
+        Vitae adipisci architecto enim ab. Aperiam inventore facilis harum at modi, blanditiis incidunt atque deleniti possimus totam enim eius esse dolores perspiciatis nisi magnam recusandae ratione! Explicabo dolor unde consectetur!
+        Rerum quia vero architecto error aut quasi! Illo fugit aliquid distinctio qui eum modi nobis eos? Labore officiis voluptatibus provident laudantium aliquid fugit similique, perferendis doloremque iste quos distinctio eius!
+        Facilis vero itaque iste voluptates veritatis aspernatur, amet libero quae asperiores excepturi reprehenderit eaque fuga. Ab magnam qui sunt est, dolorum provident quasi vel, aspernatur aperiam repellendus velit, dignissimos officia?
+    </p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ad aspernatur? Similique a excepturi ipsam repellendus quo eaque facilis unde odit veniam obcaecati, impedit, voluptates, asperiores maiores exercitationem mollitia et.</p>
+    <p>Magnam distinctio officiis fugiat repellat facilis quos doloribus possimus ex at quo maiores, voluptates corrupti ducimus sequi dolores dolorum repellendus sunt odio? Sequi praesentium omnis vitae voluptatibus iste natus soluta.</p>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ab magnam alias minus, saepe quis deleniti quos nihil, nemo in magni quo cupiditate sapiente voluptatem. Est optio beatae voluptatem natus?</span><span>Impedit tempore harum possimus? Odit, sit est quisquam nesciunt voluptates ipsa magnam nemo repudiandae! Itaque, quod cumque maxime labore voluptatum magnam odit eius laudantium amet ea sequi, excepturi, provident libero.</span></p>
+    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis iusto iure eum quidem? Sed rerum temporibus ipsa deserunt, maiores magnam vitae nesciunt excepturi, beatae laborum accusamus molestiae magni nostrum corrupti!</span><span>Repudiandae voluptate corrupti accusantium neque nam veniam autem nobis, aliquid beatae repellat quaerat, ullam facilis soluta eos voluptatibus. Commodi fuga voluptate distinctio nostrum vitae expedita, doloribus facilis harum nobis qui.</span></p> 
+</body>
+</html>

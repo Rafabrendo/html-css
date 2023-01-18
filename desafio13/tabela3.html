@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela completa</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.3em;
+            padding: 10px;
+            /* graças ao padding que é o mesmo eu consigo juntar a mesma linha do border.*/
+            font-weight: bold;
+            border: 1px solid black;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead> tr > th{
+            position: sticky;
+            top: 0;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Tabela completa</h1>
+    <!-- Hierarquia de tabelas(SIMPLES):
+        TABLE = tabela
+            CAPTION = legenda da tabela
+            TABLE ROW =linha de tabela
+                TABLE HEADER = cabeçalho de tabela
+                TABLE DATA = dado de tabela
+     -->
+     <!-- ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD (POSSO TER DENTRO:)
+                TR, TD, TH
+            TBODY (POSSO TER DENTRO:)
+                TR, TD, TH
+            TFOOT (POSSO TER DENTRO:)
+                TR, TD, TH 
+        -->
+    <table>
+        <caption>Filmes favoritos</caption>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <!-- usei th porque é titulo -->
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, eius quae repellendus fugit, quia amet consequatur sit atque delectus praesentium sed harum quaerat est neque ad, dolorem id. Quis, laborum?</p>
+    <p>Ducimus laboriosam maiores iusto sed beatae inventore quas soluta. Voluptatum cupiditate quis fugiat aut, minus ad ea hic, alias sit et quaerat necessitatibus veritatis quasi eos accusamus provident perspiciatis ipsa.</p>
+    <p>Reprehenderit aut odit quia cumque exercitationem, dolorem incidunt voluptatem animi at voluptates, eius quas officia quo? Voluptatibus magni obcaecati, voluptas sequi sapiente corrupti quia repellat quae quibusdam distinctio dolore doloribus?</p>
+    <p>Autem beatae neque deleniti delectus voluptatum quaerat quisquam odio molestiae repudiandae nesciunt similique laboriosam provident, temporibus qui facilis aperiam eum ipsum! Officia tenetur doloribus eius laboriosam quidem reprehenderit odit mollitia.</p>
+    <p>In quos, iusto harum animi excepturi, nisi officiis adipisci est nam illo quidem provident recusandae vero quam nobis et porro velit. Illum et accusantium ipsum pariatur blanditiis atque, ad recusandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias commodi odit et molestias earum rerum suscipit optio soluta distinctio illum. Molestias omnis blanditiis ad eligendi ipsum accusantium rem aut natus?</p>
+    <p>Ratione quos impedit illo asperiores veritatis illum magni corrupti nisi quis enim esse numquam libero amet odio doloribus repellat accusantium minus minima, ducimus perspiciatis aperiam non, adipisci sequi voluptates. Veritatis!</p>
+    <p>Cumque esse voluptatum, harum corrupti unde perferendis explicabo, dignissimos delectus numquam eveniet et. Veritatis consequatur adipisci harum, nisi porro quidem dolore repudiandae voluptatum quasi reprehenderit numquam esse sunt aliquam asperiores?</p>
+    <p>Ipsa dicta quae saepe, similique est sunt adipisci soluta aliquam eligendi earum, harum accusantium eum? Nostrum provident veniam debitis. Excepturi beatae nisi, consequatur consequuntur iste aliquam soluta eum qui vitae?</p>
+    <p>Quidem fugit voluptas magni repellat consequatur a minus dolor officia. Et, dicta cum fugit doloribus beatae, error aliquam sint porro modi molestiae perferendis labore perspiciatis enim, impedit similique? Et, magnam!</p>
+
+</body>
+</html>

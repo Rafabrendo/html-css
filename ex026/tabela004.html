@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agrupando colunas com colgroup">
+    <title>Exercício de tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td{
+            border:1px solid black;
+            padding: 8px;
+        }
+        .destaque{
+            background-color: greenyellow;
+        }
+        col.cnome{
+            background-color: greenyellow;
+        }
+        /* col.csexo, col.cid{
+            background-color: yellow;
+        } */
+
+        col.cgroup{
+            background-color: yellow;
+        }
+
+        .vermelho{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <!--Isso para as quatros colunas que eu escolhi -->
+        <colgroup>
+            <col class="cnome">
+            <!-- primeira coluna -->
+            <!-- <col class="csexo">
+            <col class="cid"> 
+        Posso fazer assim ou assim: -->
+            <col class="cgroup" span="2">
+            <!-- span 2 vai expandir a linha e a coluna em 2 -->
+            <!-- <col class="cprof"> -->
+            <!-- outro jeito de fazer: -->
+            <col class="vermelho">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+    <tr>
+        <th scope="col" >Nome</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Profissão</th>
+    </tr>
+    <tr>
+        <td >Ana Maria</td>
+        <td>F</td>
+        <td>25</td>
+        <td>Jornalista</td>
+    </tr>
+    <tr>
+        <td >Cláudio</td>
+        <td>M</td>
+        <td>28</td>
+        <td>Programador</td>
+    </tr>
+    
+    <tr>
+        <td >Gustavo</td>
+        <td>M</td>
+        <td>42</td>
+        <td>Professor</td>
+    </tr>
+    <tr>
+        <td>Hélio</td>
+        <td>M</td>
+        <td>19</td>
+        <td>Vendedor</td>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>F</td>
+        <td>39</td>
+        <td>Médica</td>
+    </tr>
+    <tr>
+        <td>Otávio</td>
+        <td>M</td>
+        <td>22</td>
+        <td>Nutricionista</td>
+    </tr>
+    </table>
+</body>
+</html>
