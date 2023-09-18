@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.div01{
+    
+    border-bottom: 1px solid red;
+    width: 900px;
+}
+
+.div02{
+    display: block;
+}
+
+.elemento{
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+.elemento1{
+    display: block;
+    width: 200px;
+    height: 150px;
+}
+
+#elemento01{
+    border: 1px solid blue;
+    background-color: aqua;
+}
+#elemento02{
+    border: 1px solid blue;
+    background-color: aqua;
+}
+#elemento03{
+    border: 1px solid blue;
+    background-color: aqua;
+}
+
+#elemento04{
+    border: 1px solid blue;
+    background-color: aqua;
+}
+#elemento05{
+    border: 1px solid blue;
+    background-color: aqua;
+}
+#elemento06{
+    border: 1px solid blue;
+    background-color: aqua;
+}
+

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.elemento{
+    display: grid;
+    /* flex-direction: column; */
+    width: fit-content;
+    background-color: aquamarine;
+    border: 1px solid rgba(212, 204, 204, 0.151);
+    width: 300px;
+    justify-content: space-around;
+}
+
+.elemento2{ 
+    /* flex-direction: column; */
+    width: 300px;
+    background-color: aquamarine;
+    border: 1px solid rgba(212, 204, 204, 0.151);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    /* justify-content: space-around; */
+    
+    display: inline-block;
+}
+
+#one{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    vertical-align: middle;
+}
