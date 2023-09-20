@@ -4,46 +4,87 @@
     
     border-bottom: 1px solid red;
     width: 900px;
+    position: relative; 
+    /* Elemento pai */
 }
 
 .div02{
     display: block;
+    
 }
 
 .elemento{
     display: inline-block;
     width: 200px;
     height: 150px;
+    
 }
 .elemento1{
     display: block;
     width: 200px;
     height: 150px;
+   
 }
 
 #elemento01{
     border: 1px solid blue;
     background-color: aqua;
+    position: sticky;
+    top: 40px;
 }
 #elemento02{
     border: 1px solid blue;
-    background-color: aqua;
+    background-color: rgb(105, 165, 165);
+    opacity: 0.5;
+    position: absolute;
+    /* Elemento filho */
+    /* right: 10px; */
+    top: 100px;
 }
 #elemento03{
     border: 1px solid blue;
-    background-color: aqua;
+    background-color: rgb(158, 184, 184);
 }
 
 #elemento04{
     border: 1px solid blue;
     background-color: aqua;
+    /* position: fixed; */
+    position: sticky;
+    top: 30px;
 }
 #elemento05{
     border: 1px solid blue;
-    background-color: aqua;
+    background-color: rgb(105, 165, 165);
 }
 #elemento06{
     border: 1px solid blue;
-    background-color: aqua;
+    background-color: rgb(158, 184, 184);
+    position: sticky;
+    top: 30px;
+}
+
+.div03{
+    width: 900px;
+    border: 1px solid rgb(24, 22, 22);
+    height: 300px;
+    position: relative;
+    background-color: beige;
+
+}
+
+.elemento7{
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid blue;
+    border-radius: 50% 50% 50% 15%;
+    background-color: aquamarine;
+    position: absolute;
+    /* right: 250px;
+    bottom: 150px; */
+
+    transform: rotate(-45deg);
+    outline: 8px solid white;
 }
 
