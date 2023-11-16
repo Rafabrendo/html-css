@@ -2,11 +2,11 @@
 
 .elemento{
     display: grid;
-    /* flex-direction: column; */
+    /* flex-direction: row; */
     width: fit-content;
-    background-color: aquamarine;
+    background-color: rgb(215, 216, 216);
     border: 1px solid rgba(212, 204, 204, 0.151);
-    width: 300px;
+    width: 400px;
     justify-content: space-around;
 }
 
