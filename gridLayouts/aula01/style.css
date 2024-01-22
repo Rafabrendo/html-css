@@ -18,14 +18,44 @@
 
 .container2{
     border: 1px solid blue;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 5px;
+    margin-bottom: 20px; 
 
     /* display: grid; */
-    width: 250px;
-    display: inline-grid;
+    /* width: 50%; */
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 300px 200px;
+    background-color: yellow;
+
+
 }
 
 .item2{
     background-color: palegreen;
+}
+
+.item-01{
+    background-color: cornflowerblue;
+}
+
+.item-02{
+    background-color: palegreen;
+}
+
+.item-03{
+    background-color: palevioletred;
+}
+
+.item-04{
+    background-color: beige;
+}
+
+.item-05{
+    background-color: cadetblue;
+}
+
+.item-06{
+    background-color: darkolivegreen;
 }
