@@ -59,3 +59,47 @@
 .item-06{
     background-color: darkolivegreen;
 }
+
+.container3{
+    border: 1px solid blue;
+    padding: 5px;
+    margin-bottom: 20px; 
+
+    /* display: grid; */
+    /* width: 50%; */
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 300px 100px);
+    background-color: yellow;
+
+
+}
+
+.item3{
+    background-color: palegreen;
+}
+
+.item-001{
+    background-color: cornflowerblue;
+}
+
+.item-002{
+    background-color: palegreen;
+}
+
+.item-003{
+    background-color: palevioletred;
+}
+
+.item-004{
+    background-color: beige;
+}
+
+.item-005{
+    background-color: cadetblue;
+}
+
+.item-006{
+    background-color: darkolivegreen;
+}
