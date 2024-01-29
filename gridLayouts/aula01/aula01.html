@@ -62,7 +62,24 @@
     </p>
 
     <h2>Função repeat</h2>
-    <p>Permite repetir para todos, ou para algumas das faixas, o mesmo valor para seu tamanho de coluna ou linha.</p>
+    <p>Permite repetir para todos, ou para algumas das faixas, o mesmo valor para seu tamanho de coluna ou linha.
+    ex.:</p>
+    <pre>
+        <code>
+            <p>Antes:</p>
+            .container{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        </code>
+        <code>
+            <p>Depois:</p>
+            .container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        </code>
+    
+    </pre>
+    <p>repeat(3, 1fr 2fr); -> mesma coisa que: 1fr 2fr 1fr 2fr 1fr 2fr</p>
 
     <div class="container3">
         <div class="item3 item-001">item 01</div>
@@ -72,7 +89,27 @@
         <div class="item3 item-005">item 05</div>
         <div class="item3 item-006">item 06</div>
     </div>
-
+    <br>
+    <p><b>auto-fill</b> -> vai ajustar o maior numero de colunas com determinado tamanho em uma linha, mesmo que elas fiquem vazias.</p>
+    <div class="container4">
+        <div class="item4 item-001">item 01</div>
+        <div class="item4 item-002">item 02</div>
+        <div class="item4 item-003">item 03</div>
+        <div class="item4 item-004">item 04</div>
+        <div class="item4 item-005">item 05</div>
+        <div class="item4 item-006">item 06</div>
+    </div>
+    <p>Essas propriedades estão sendo impostas no container</p>
+    <br>
+    <p><strong>auto-fit</strong> -> Quando não se tem itens o suficiente para preencher o numero de linhas ou colunas, vai dimensionar os elementos para preencher todo o espaço.</p>
+    <div class="container5">
+        <div class="item5 item-001">item 01</div>
+        <div class="item5 item-002">item 02</div>
+        <div class="item5 item-003">item 03</div>
+        <div class="item5 item-004">item 04</div>
+        <div class="item5 item-005">item 05</div>
+        <div class="item5 item-006">item 06</div>
+    </div>
 
 </body>
 </html>

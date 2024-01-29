@@ -1,5 +1,9 @@
 @charset "UTF-08";
 
+body{
+    background: rgba(148, 148, 235, 0.233);
+}
+
 .container{
     border: 1px solid blue;
     padding: 10px;
@@ -14,7 +18,12 @@
     background-color: palegreen;
 }
 
-
+pre{
+    background-color: rgba(27, 24, 20, 0.466);
+    width: 30%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
 
 .container2{
     border: 1px solid blue;
@@ -69,8 +78,8 @@
     /* width: 50%; */
     
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 300px 100px);
+    grid-template-columns: repeat(3, 1fr); /*Vai repetir 3x 1fr*/
+    grid-template-rows: repeat(1, 300px 100px); /*Vai repetir 1x, 300px e 100px*/
     background-color: yellow;
 
 
@@ -102,4 +111,44 @@
 
 .item-006{
     background-color: darkolivegreen;
+}
+
+.container4{
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid black;
+    height: 500px;
+
+    /* display: grid; */
+    /* width: 50%; */
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px); 
+    grid-template-rows: repeat(2, 1fr);
+    background-color: yellow;
+}
+
+.item4{
+    border: 1px solid black;
+
+}
+/* voltar **** */
+.container5{
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid black;
+    height: 500px;
+
+    /* display: grid; */
+    /* width: 50%; */
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 6fr)); 
+    grid-template-rows: repeat(2, 1fr);
+    background-color: yellow;
+}
+
+.item5{
+    border: 1px solid black;
+
 }
