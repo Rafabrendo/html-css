@@ -34,7 +34,7 @@ h3{
     display: flex;
     gap: 20px;
     margin-bottom: 40px;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .card{
@@ -66,4 +66,40 @@ h3{
     margin-top: 40px;
     gap: 20px;
 
+}
+
+@media screen and (min-width: 320px) and (max-width: 690px){
+    /* .card{
+        color: lightblue;
+        background-color: black;
+    } */
+
+    .details{
+        flex-direction: column;
+    }
+
+    .image-card{
+        flex-basis: 100px;
+    }
+
+}
+
+@media screen and (orientation: landscape){
+    /* modo paisagem */
+    header{
+        background-color: rgba(134, 95, 172, 0.473);
+    }
+}
+
+@media screen and (orientation: portrait){
+    /* modo retrato */
+    header{
+        background-color: rgba(194, 190, 199, 0.473);
+    }
+}
+
+@media screen and (pointer: coarse){
+    header{
+        color: chocolate;
+    }
 }
