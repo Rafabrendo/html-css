@@ -15,6 +15,24 @@
                 color: red;
             }
         }
+
+        img{
+            max-width: 100%;
+        }
+
+        .image{
+            border: 2px solid blue;
+            height: 500px;
+            width: 100%;
+            background-image: url(hardsadness.jpeg);
+        }
+
+        @media screen and (max-width: 690px) {
+            .image{
+                background-image: url("https://source.unsplash.com/random/300x300");
+            }
+        }
+
     </style>
 
 </head>
@@ -22,7 +40,18 @@
     <p>
         <b>To understand this example, you should open...</b>
     </p>
-    <img src="hardsadness.jpeg" alt="imagem">
+    <div class="image">
+    
+    </div>
+
+    <img src="hardsadness.jpeg" alt="imagem" >
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi commodi nulla labore, dolores voluptatem, aut quibusdam dolor animi nostrum suscipit mollitia expedita consequatur nemo error. Cumque vero blanditiis exercitationem ducimus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, consectetur ipsa numquam nam, quis nostrum consequatur natus, beatae quae culpa minus veritatis? Voluptates modi iure facere voluptate quasi dignissimos pariatur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, totam hic odio accusamus pariatur impedit mollitia nulla at molestiae aperiam dignissimos. Placeat accusamus amet blanditiis libero ad numquam, quibusdam laborum.</p>
+
+    <picture>
+        <source srcset="hardsadness.jpeg" media="(max-width: 680px)">
+        <source srcset="https://source.unsplash.com/random/300x300">
+        <img src="https://source.unsplash.com/random/300x300" alt="imagem de teste">
+    </picture>
+
 </body>
 </html>
