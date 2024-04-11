@@ -68,11 +68,11 @@ h3{
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 690px){
-    /* .card{
+/* @media screen and (min-width: 320px) and (max-width: 690px){
+    .card{
         color: lightblue;
         background-color: black;
-    } */
+    }
 
     .details{
         flex-direction: column;
@@ -82,6 +82,21 @@ h3{
         flex-basis: 100px;
     }
 
+} */
+
+/* Operador or, vai respeitar uma das condições */
+@media screen and (min-width: 600px), screen and (orientation: landscape){
+    body{
+        color: red;
+    }
+}
+
+/* Nega as condições aplicadas, invertendo todo o significado do media query */
+@media not all and (orientation: landscape){
+    body{
+        color: red;
+        background-color: blue;
+    }
 }
 
 @media screen and (orientation: landscape){
