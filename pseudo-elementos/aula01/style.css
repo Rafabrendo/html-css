@@ -1,0 +1,22 @@
+code{
+    background-color: lightgray;
+}
+
+p::first-letter{
+    color: red;
+    font-size: 2rem;
+
+}
+h1::first-letter{
+    color: red;
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: aqua;
+
+}
+
+/* Para pegar a primeira letra de todos os elementos */
+::first-letter{
+
+}
