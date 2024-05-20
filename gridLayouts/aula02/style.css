@@ -1,0 +1,40 @@
+@charset "UTF-08";
+
+.container1{
+    background-color: yellow;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: min-content min-content;
+}
+
+.item{
+    border: 1px solid black;
+    box-sizing: content-box;
+    
+    /* overflow: scroll; */
+}
+
+.item01{ 
+    background-color: aqua;
+}
+.item02{
+    background-color: rgb(104, 139, 90);
+}
+.item03{
+    background-color: bisque;
+}
+
+.container2{
+    background-color: aquamarine;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: max-content max-content;
+}

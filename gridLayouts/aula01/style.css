@@ -143,7 +143,7 @@ pre{
     /* width: 50%; */
     
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 6fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 6fr)); 
     grid-template-rows: repeat(2, 1fr);
     background-color: yellow;
 }
