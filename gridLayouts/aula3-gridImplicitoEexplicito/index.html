@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>grid-auto-rows</h3><p>grids que são criados de forma automatica. <br>
+    Para grids impplicitos </p>
+    <div class="container">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 03</div>
+        <div class="item item-03">Item 02</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Item 05</div>
+        <div class="item item-06">Item 06</div>
+        <div class="item item-07">Item 07</div>
+    </div>
+
+    <h3>grid-auto-flow</h3><p>Controla como o algoritmo de reposicionamento automático irá se comportar:
+    </p>
+    <p><code>grid-auto-flow: row;</code> -> default value</p>
+    <ul>
+        <li>row</li>
+        <li>column</li>
+        <li>dense <p>obs.: Não é tão bom usa-lo por causa da acessibilidade</p></li>
+    </ul>
+    <div class="container02">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 03</div>
+        <div class="item item-03">Item 02</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Item 05</div>
+        <div class="item item-06">Item 06</div>
+        <div class="item item-07">Item 07</div>
+    </div>
+
+    <h3>grid-auto-rows</h3><p>Basicamente para definir a largura dos grids implicitos</p>
+    <div class="container03">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 03</div>
+        <div class="item item-03">Item 02</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Item 05</div>
+        <div class="item item-06">Item 06</div>
+        <div class="item item-07">Item 07</div>
+    </div>
+
+    <h3>minmax</h3><p>Definindo o tamanho mínimo e máximo das faixas</p>
+    <p><code>grid-auto-rows: minmax(100px, auto);</code></p>
+    <div class="container04">
+        <div class="item item-01">Item 01</div>
+        <div class="item item-02">Item 03</div>
+        <div class="item item-03">Item 02</div>
+        <div class="item item-04">Item 04</div>
+        <div class="item item-05">Item 05</div>
+        <div class="item item-06">Item 06</div>
+        <div class="item item-07">Item 07</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+.container{
+    background-color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+    grid-auto-rows: 1fr;
+}
+
+.item{
+    border: 1px solid black;
+    
+}
+
+.item-01{
+    background-color: aliceblue;
+}
+
+.item-02{
+    background-color: rgb(41, 97, 146);
+}
+
+.item-03{
+    background-color: rgb(133, 175, 211);
+}
+.item-04{
+    background-color: rgb(115, 148, 177);
+}
+.item-05{
+    background-color: rgb(52, 53, 54);
+}
+.item-06{
+    background-color: rgb(96, 114, 129);
+}
+.item-07{
+    background-color: aliceblue;
+}
+
+.container02{
+    background-color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+}
+
+.container03{
+    background-color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+
+
+}
+
+.container04{
+    background-color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+
+    grid-auto-flow: row;
+    grid-auto-rows: minmax(100px, auto);
+
+
+}

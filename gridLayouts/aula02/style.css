@@ -28,6 +28,10 @@
     background-color: bisque;
 }
 
+.item04{
+    background-color: azure;
+}
+
 .container2{
     background-color: aquamarine;
     padding: 10px;
@@ -37,4 +41,14 @@
 
     display: grid;
     grid-template-columns: max-content max-content;
+}
+
+.container3{
+    background: yellowgreen;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
 }
