@@ -1,0 +1,16 @@
+@charset "UTF-08";
+
+code{
+    background-color: aliceblue;
+}
+
+p::first-line {
+    color: blue;
+    background-color: aquamarine;
+    /* font-size: 2rem; */
+    text-decoration: underline;
+}
+
+iframe::backdrop{
+    background-color: aqua;
+}
