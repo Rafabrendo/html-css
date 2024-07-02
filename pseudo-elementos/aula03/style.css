@@ -1,0 +1,15 @@
+@charset "UTF-08";
+
+code{
+    background-color: lightgray;
+}
+
+summary::marker {
+    content: "➡️";
+    color: red;
+}
+
+li::marker{
+    color: blueviolet;
+    content: "rafa: ";
+}
