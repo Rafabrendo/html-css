@@ -14,3 +14,7 @@ p::first-line {
 iframe::backdrop{
     background-color: aqua;
 }
+
+video::backdrop{
+    background-color: aquamarine;
+}
