@@ -1,0 +1,16 @@
+@charset "UTF-08";
+
+code{
+    background-color: lightslategray;
+}
+
+/* ::placeholder    -> Para pegar todos os placeholder's */
+
+input::placeholder{
+    color: lightcoral;
+    background: lightblue;
+}
+
+input{
+    color: red;
+}
