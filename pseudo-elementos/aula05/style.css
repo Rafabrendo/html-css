@@ -1,0 +1,16 @@
+@charset "UTF-08";
+
+code{
+    background-color: aqua;
+}
+
+::selection{
+    background-color: palevioletred;
+    color: white;
+}
+
+.exemplo::selection {
+    background-color: rgb(201, 223, 215);
+    color: blue;
+    text-decoration: line-through;
+}
