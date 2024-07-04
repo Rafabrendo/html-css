@@ -1,0 +1,13 @@
+@charset "UTF-08";
+
+code{
+    background-color: antiquewhite;
+}
+
+input::file-selector-button{
+    border: 2px solid #6c5ce7;
+    background-color: darkcyan;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+}
